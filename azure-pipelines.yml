@@ -47,6 +47,7 @@ jobs:
   - script: |
       sudo apt install build-essential cmake libboost-system-dev libboost-thread-dev libboost-program-options-dev libboost-test-dev libeigen3-dev zlib1g-dev libbz2-dev liblzma-dev
       python -m pip install --upgrade pip
+      pip install -r requirements.txt
       pip install wheel flake8 pylint
     displayName: 'Install dependencies'
 
